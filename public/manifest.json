@@ -1,21 +1,26 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "kibus",
+  "name": "kibus landing",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
+      "sizes": "72x32 120x54",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "./logos/primColor_logo.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "120x54"
     },
     {
-      "src": "logo512.png",
+      "src": "./logos/secColor_logo.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "120x54"
+    },
+    {
+      "src": "./logos/primColor_logo.png",
+      "type": "image/png",
+      "sizes": "120x54"
     }
   ],
   "start_url": ".",
