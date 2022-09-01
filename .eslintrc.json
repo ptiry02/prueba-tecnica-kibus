@@ -1,4 +1,9 @@
 {
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
   "env": {
     "browser": true,
     "es2021": true
@@ -12,11 +17,11 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "simple-import-sort"],
   "rules": {
     "prefer-arrow-callback": "warn",
     "arrow-spacing": "error",
-    "sort-imports": "warn",
+    "simple-import-sort/imports": "error",
     "no-duplicate-imports": "error"
   }
 }
