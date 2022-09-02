@@ -19,6 +19,7 @@
   },
   "plugins": ["react", "simple-import-sort"],
   "rules": {
+    "react/prop-types": "off",
     "prefer-arrow-callback": "warn",
     "arrow-spacing": "error",
     "simple-import-sort/imports": "error",
