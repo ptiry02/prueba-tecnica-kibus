@@ -5,7 +5,7 @@ import CharlevoixPro from './fonts/CharlevoixPro-FullFamily-Free/CharlevoixPro-B
 const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: 'Charlevoix Pro';
-        src: url(${CharlevoixPro}) format('otf');
+        src: url(${CharlevoixPro});
     }
     html {
         box-sizing: border-box;

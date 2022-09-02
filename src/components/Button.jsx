@@ -26,4 +26,7 @@ const Btn = styled.div.attrs(({ bgColor, textColor }) => ({
   background: ${({ bgColor }) => bgColor};
   color: ${({ textColor }) => textColor};
   border: 1px solid ${({ textColor }) => textColor};
+  :hover {
+    cursor: pointer;
+  }
 `
