@@ -9,6 +9,7 @@ const Details = () => {
       <Container>
         <Recipes />
       </Container>
+
       <SlideBackground>
         <Swiper
           pagination={{
@@ -17,6 +18,9 @@ const Details = () => {
           centeredSlides={true}
           slidesPerView={1.2}
         >
+          <SwiperSlide>
+            <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
+          </SwiperSlide>
           <SwiperSlide>
             <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
           </SwiperSlide>
@@ -37,9 +41,11 @@ export default Details
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
+  height: 1200px;
   background-color: ${({ theme }) => theme.colors.secBack};
   background-image: url('assets/images/bgIcons.png');
   background-size: contain;
+  background-position: center;
   display: flex;
   flex-direction: column;
 `
