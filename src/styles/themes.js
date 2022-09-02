@@ -7,6 +7,7 @@ const theme = {
     secBack: '#FEF9F7',
     grey: '#AAAAAA',
     lightGrey: '#F9F9F9',
+    buttonGrey: '#D5DBE1',
     white: '#FFFFFF'
   },
   devices: {

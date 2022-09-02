@@ -21,5 +21,8 @@ const GlobalStyle = createGlobalStyle`
     body {
         width: 100vw;
     }
+    #root {
+        overflow-x: hidden;
+    }
 `
 export default GlobalStyle

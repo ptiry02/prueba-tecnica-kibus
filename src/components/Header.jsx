@@ -43,7 +43,7 @@ export default Header
 
 const Wrapper = styled.div`
   width: 100%;
-  padding: 25px 6.5% 200px;
+  padding: 25px 6.5% 150px;
 `
 const Img = styled.img`
   width: 100%;
