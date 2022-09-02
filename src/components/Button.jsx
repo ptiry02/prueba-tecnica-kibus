@@ -18,8 +18,9 @@ const Btn = styled.div.attrs(({ bgColor, textColor }) => ({
 }))`
   ${({ theme }) => theme.text.button}
 
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   padding: 16px 32px;
   column-gap: 16px;
   border-radius: 28px;

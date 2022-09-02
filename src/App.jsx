@@ -1,22 +1,7 @@
-import styled, { useTheme } from 'styled-components'
-
-import Button from './components/Button'
+import Home from './components/Home'
 
 const App = () => {
-  const { colors } = useTheme()
-  return (
-    <>
-      <Title>Alimentar</Title>
-      <Button text='Reservar ahora' textColor={colors.secondary} arrow />
-    </>
-  )
+  return <Home />
 }
 
 export default App
-
-const Title = styled.h1`
-  ${({ theme }) => theme.text.mobile.h2}
-  @media (${({ theme }) => theme.devices.desktop}) {
-    ${({ theme }) => theme.text.desktop.title}
-  }
-`

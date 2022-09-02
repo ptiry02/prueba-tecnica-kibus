@@ -1,11 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
 
-import CharlevoixPro from './fonts/CharlevoixPro-FullFamily-Free/CharlevoixPro-Bold.otf'
-
 const GlobalStyle = createGlobalStyle`
     @font-face {
         font-family: 'Charlevoix Pro';
-        src: url(${CharlevoixPro});
+        src: url('assets/fonts/CharlevoixPro-Bold.otf');
     }
     html {
         box-sizing: border-box;
