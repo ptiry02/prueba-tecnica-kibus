@@ -3,7 +3,7 @@ import styled, { useTheme } from 'styled-components'
 
 import Button from './Button'
 
-const Home = () => {
+const Header = () => {
   const [isMobile, setIsMobile] = useState(true)
   const theme = useTheme()
 
@@ -13,7 +13,7 @@ const Home = () => {
     }
   }, [])
   return (
-    <Header>
+    <Wrapper>
       {isMobile ? (
         <img src='assets/images/logos/secColor_mobileLogo.png' alt='logo' />
       ) : (
@@ -35,13 +35,13 @@ const Home = () => {
           <Button text='Quiero Saber Más' textColor={theme.colors.primary} arrow />
         </ButtonGroup>
       </Content>
-    </Header>
+    </Wrapper>
   )
 }
 
-export default Home
+export default Header
 
-const Header = styled.div`
+const Wrapper = styled.div`
   width: 100%;
   padding: 25px 6.5% 200px;
 `
