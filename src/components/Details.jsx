@@ -2,6 +2,7 @@ import styled, { useTheme } from 'styled-components'
 
 import Button from './Button'
 import Carrousell from './Carrousell'
+import CleanIcon from './icons/CleanIcon'
 import Recipes from './Recipes'
 
 const Details = () => {
@@ -27,6 +28,11 @@ const Details = () => {
       </DetailsInfo>
       <ProductInfo>
         <ProductImg src='assets/images/product_display_mobile.png' alt='kibuco-product' />
+        <IconsGrid>
+          <IconGroup>
+            <CleanIcon />
+          </IconGroup>
+        </IconsGrid>
       </ProductInfo>
     </Wrapper>
   )
@@ -83,3 +89,5 @@ const ProductImg = styled.img`
   padding-top: 100px;
   width: 100%;
 `
+const IconsGrid = styled.div``
+const IconGroup = styled.div``
