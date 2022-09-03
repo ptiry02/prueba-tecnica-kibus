@@ -8,7 +8,8 @@ const theme = {
     grey: '#AAAAAA',
     lightGrey: '#F9F9F9',
     buttonGrey: '#D5DBE1',
-    white: '#FFFFFF'
+    white: '#FFFFFF',
+    black: '#111111'
   },
   devices: {
     desktop: 'min-width: 1180px',
