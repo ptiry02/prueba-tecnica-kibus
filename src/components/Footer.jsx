@@ -18,16 +18,18 @@ const Footer = () => {
         <p>Condiciones de uso</p>
         <p>Cookies</p>
       </Section>
-      <Section>
-        <h2>Contáctenos</h2>
-        <p>Location</p>
-        <p>Teléfono</p>
-      </Section>
-      <Socials>
-        <FiFacebook size={23} />
-        <FiInstagram size={23} />
-        <FiYoutube size={23} />
-      </Socials>
+      <Contact>
+        <Section>
+          <h2>Contáctenos</h2>
+          <p>Location</p>
+          <p>Teléfono</p>
+        </Section>
+        <Socials>
+          <FiFacebook size={23} />
+          <FiInstagram size={23} />
+          <FiYoutube size={23} />
+        </Socials>
+      </Contact>
       <Section>
         <h2>Métods de pago</h2>
         <Methods>
@@ -70,6 +72,11 @@ const Section = styled.div`
     color: ${({ theme }) => theme.colors.white};
     padding-bottom: 12px;
   }
+`
+const Contact = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
 `
 const Socials = styled.div`
   display: flex;

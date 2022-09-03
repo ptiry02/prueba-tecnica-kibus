@@ -1,4 +1,5 @@
 import 'swiper/css'
+import 'swiper/css/navigation'
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'

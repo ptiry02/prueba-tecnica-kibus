@@ -105,10 +105,16 @@ const ProductInfo = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (${({ theme }) => theme.devices.tablet}) {
+    flex-direction: row-reverse;
+  }
 `
 const ProductImg = styled.img`
   padding-top: 100px;
   width: 100%;
+  @media (${({ theme }) => theme.devices.tablet}) {
+    width: 50%;
+  }
 `
 const IconsGrid = styled.div`
   width: 100%;
@@ -121,11 +127,16 @@ const IconsGrid = styled.div`
   row-gap: 95px;
   margin: 100px 0;
   padding: 0 4.5%;
+  @media (${({ theme }) => theme.devices.tablet}) {
+    row-gap: 30px;
+    padding: 0;
+  }
 `
 const IconGroup = styled.div`
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 16px;
   width: 158px;
   text-align: center;
 `
