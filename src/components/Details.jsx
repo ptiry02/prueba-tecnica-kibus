@@ -2,7 +2,7 @@ import styled, { useTheme } from 'styled-components'
 
 import Button from './Button'
 import Carrousell from './Carrousell'
-import CleanIcon from './icons/CleanIcon'
+import { CleanIcon, DevicesIcon, FoodIcon, HistoryIcon, ProgramableIcon, WaterIcon } from './icons/Icons'
 import Recipes from './Recipes'
 
 const Details = () => {
@@ -30,7 +30,28 @@ const Details = () => {
         <ProductImg src='assets/images/product_display_mobile.png' alt='kibuco-product' />
         <IconsGrid>
           <IconGroup>
+            <ProgramableIcon />
+            <Text>Programmable 24h</Text>
+          </IconGroup>
+          <IconGroup>
+            <WaterIcon />
+            <Text>Agua siempre disponible</Text>
+          </IconGroup>
+          <IconGroup>
+            <FoodIcon />
+            <Text>Cantidad personalizable</Text>
+          </IconGroup>
+          <IconGroup>
+            <HistoryIcon />
+            <Text>Historial de las comidas</Text>
+          </IconGroup>
+          <IconGroup>
             <CleanIcon />
+            <Text>Fácil de usar y lavar</Text>
+          </IconGroup>
+          <IconGroup>
+            <DevicesIcon />
+            <Text>App para iOS y Android</Text>
           </IconGroup>
         </IconsGrid>
       </ProductInfo>
@@ -89,5 +110,25 @@ const ProductImg = styled.img`
   padding-top: 100px;
   width: 100%;
 `
-const IconsGrid = styled.div``
-const IconGroup = styled.div``
+const IconsGrid = styled.div`
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(158px, 1fr));
+  column-gap: 16px;
+  row-gap: 95px;
+  margin: 100px 0;
+  padding: 0 4.5%;
+`
+const IconGroup = styled.div`
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 158px;
+  text-align: center;
+`
+const Text = styled.h2`
+  ${({ theme }) => theme.text.mobile.h2}
+`
