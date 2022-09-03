@@ -12,18 +12,18 @@ const Recipes = () => {
     if (window.innerWidth >= 1280) {
       setIsMobile(false)
     }
-  })
+  }, [])
   return (
     <Wrapper>
       {recipes.map((item, index) => (
         <Recipe key={index}>
-          <img src={item.img} alt={item.name.mobile} />
+          <img style={{ width: '90%' }} src={item.img} alt={item.name.mobile} />
           <Name>{isMobile ? item.name.mobile : item.name.desktop}</Name>
           <Descr>{item.description}</Descr>
         </Recipe>
       ))}
       <Recipe>
-        <img src='assets/images/pollo.png' alt='' />
+        <img style={{ width: '90%' }} src='assets/images/pollo.png' alt='' />
         <Button text='Tu Receta' textColor={colors.white} bgColor={colors.buttonGrey} arrow />
         <Descr>Ayúdanos a decidir nuestra nueva receta</Descr>
       </Recipe>
@@ -42,8 +42,12 @@ const Wrapper = styled.div`
   border-radius: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 0 32px;
   column-gap: 32px;
+  @media (${({ theme }) => theme.devices.laptop}) {
+    width: 100%;
+  }
 `
 const Recipe = styled.div`
   display: flex;
@@ -51,6 +55,8 @@ const Recipe = styled.div`
   align-items: center;
   width: 202px;
   text-align: center;
+  @media (${({ theme }) => theme.devices.desktop}) {
+  }
 `
 const Name = styled.h2`
   ${({ theme }) => theme.text.mobile.h2}

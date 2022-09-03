@@ -20,9 +20,13 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         width: 100vw;
+        display: flex;
+        justify-content: center;
     }
     #root {
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
     }
 `
 export default GlobalStyle

@@ -12,9 +12,9 @@ const theme = {
     black: '#111111'
   },
   devices: {
-    desktop: 'min-width: 1024px',
-    tablet: 'min-width: 768px',
-    mobile: 'min-width: 375px'
+    desktop: 'min-width: 1180px',
+    laptop: 'min-width: 1024px',
+    tablet: 'min-width: 768px'
   },
   text: {
     button: `

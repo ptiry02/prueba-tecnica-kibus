@@ -10,7 +10,7 @@ const Carrousell = () => {
     if (window.innerWidth >= 768) {
       setIsMobile(false)
     }
-  }, [])
+  })
   return (
     <SlideBackground>
       {isMobile ? (
@@ -61,6 +61,9 @@ const SlideBackground = styled.div`
   padding: 50px 0;
   .carousel {
     width: 90%;
+  }
+  @media (${({ theme }) => theme.devices.laptop}) {
+    max-width: 650px;
   }
 `
 const Img = styled.img`
