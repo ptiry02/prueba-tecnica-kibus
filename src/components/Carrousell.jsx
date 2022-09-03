@@ -1,5 +1,5 @@
 import { useLayoutEffect, useState } from 'react'
-import Carousel from 'react-material-ui-carousel'
+import Carousel from 'react-bootstrap/Carousel'
 import styled from 'styled-components'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
@@ -29,20 +29,20 @@ const Carrousell = () => {
           </SwiperSlide>
         </Swiper>
       ) : (
-        <CustomCarousel
-          animation='slide'
-          duration={500}
-          navButtonsAlwaysVisible
-          indicators={false}
-          cycleNavigation={false}
-          autoPlay={false}
-          height={517.5}
-        >
-          <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
-          <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
-          <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
-          <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
-        </CustomCarousel>
+        <Carousel indicators={false} wrap={false} interval={null}>
+          <Carousel.Item>
+            <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
+          </Carousel.Item>
+          <Carousel.Item>
+            <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
+          </Carousel.Item>
+        </Carousel>
       )}
     </SlideBackground>
   )
@@ -58,16 +58,12 @@ const SlideBackground = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 25px 0;
-`
-const CustomCarousel = styled(Carousel)`
-  width: 680px;
+  padding: 50px 0;
+  .carousel {
+    width: 90%;
+  }
 `
 const Img = styled.img`
   width: 100%;
   border-radius: 15px;
-  @media (${({ theme }) => theme.devices.tablet}) {
-    height: 517.5px;
-    width: 680px;
-  }
 `
