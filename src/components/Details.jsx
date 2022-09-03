@@ -1,7 +1,7 @@
 import styled, { useTheme } from 'styled-components'
-import { Swiper, SwiperSlide } from 'swiper/react'
 
 import Button from './Button'
+import Carrousell from './Carrousell'
 import Recipes from './Recipes'
 
 const Details = () => {
@@ -12,29 +12,7 @@ const Details = () => {
         <Recipes />
       </Container>
       <DetailsInfo>
-        <SlideBackground>
-          <Swiper
-            pagination={{
-              clickable: true
-            }}
-            centeredSlides={true}
-            slidesPerView={1.2}
-            spaceBetween={7}
-          >
-            <SwiperSlide>
-              <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Img src='assets/images/043-kibus.jpeg' alt='kibus' />
-            </SwiperSlide>
-          </Swiper>
-        </SlideBackground>
+        <Carrousell />
         <Title>Mejor para ellos, más fácil y cómodo para ti</Title>
         <Paragraph>
           Con Kibus, nunca tendrás que preocuparte de cómo ofrecer una dieta sana y natural a tu perro de forma cómoda y
@@ -71,18 +49,6 @@ const Container = styled.div`
   top: -140px;
   overflow-x: auto;
   padding: 30px 6.5% 60px 6.5%;
-`
-const SlideBackground = styled.div`
-  width: 100%;
-  background-image: url('assets/images/Ellipse_8.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 25px 0;
-`
-const Img = styled.img`
-  width: 100%;
-  border-radius: 15px;
 `
 const DetailsInfo = styled.div`
   position: relative;
