@@ -29,5 +29,9 @@ const Btn = styled.div.attrs(({ bgColor, textColor }) => ({
   border: 1px solid ${({ textColor }) => textColor};
   :hover {
     cursor: pointer;
+    transition: all 300ms ease-in;
+    background: ${({ bgColor, theme }) =>
+      bgColor === theme.colors.primary ? theme.colors.secondary : theme.colors.primary};
+    color: ${({ bgColor, theme }) => (bgColor === 'none' ? theme.colors.white : theme.colors.primary)};
   }
 `

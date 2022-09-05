@@ -21,7 +21,7 @@ const Header = () => {
       )}
       <Wrapper>
         <ImgContainer>
-          <img style={{ width: '100%' }} src='assets/images/header_image.png' alt='header-image' />
+          <Img style={{ width: '100%' }} src='assets/images/header_image.png' alt='header-image' />
         </ImgContainer>
         <Content>
           <Title>
@@ -58,6 +58,7 @@ const Logo = styled.img`
     margin: 68px 3%;
   }
 `
+const Img = styled.img``
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -65,6 +66,15 @@ const Wrapper = styled.div`
   padding: 0 6.5% 150px;
   background-color: ${({ theme }) => theme.colors.white};
   max-width: 1280px;
+  animation: fadeIn 2s;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   @media (${({ theme }) => theme.devices.laptop}) {
     padding: 0 3% 150px;
     display: flex;

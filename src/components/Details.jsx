@@ -90,6 +90,17 @@ const Container = styled.div`
   overflow-x: auto;
   padding: 30px 6.5% 60px 6.5%;
   max-width: 1281px;
+  animation: appear 2s;
+  @keyframes appear {
+    0% {
+      opacity: 0;
+      transform: translateY(140px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
   @media (${({ theme }) => theme.devices.laptop}) {
     align-self: center;
   }
