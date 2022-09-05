@@ -1,6 +1,7 @@
 {
   "name": "prueba-tecnica-rocket-digital",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "author": "Paul Tiry email:tirypaul@gmail.com",
   "private": true,
   "dependencies": {
     "bootstrap": "^5.2.0",
