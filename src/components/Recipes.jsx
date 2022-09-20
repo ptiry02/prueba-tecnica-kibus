@@ -56,6 +56,7 @@ const Recipe = styled.div`
   width: 202px;
   text-align: center;
   @media (${({ theme }) => theme.devices.desktop}) {
+    width: 270px;
   }
 `
 const Name = styled.h2`

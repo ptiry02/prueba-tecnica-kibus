@@ -88,7 +88,8 @@ const Container = styled.div`
   position: relative;
   top: -140px;
   overflow-x: auto;
-  padding: 30px 6.5% 60px 6.5%;
+  width: 100%;
+  padding: 30px 0 60px 0;
   max-width: 1281px;
   animation: appear 2s;
   @keyframes appear {
